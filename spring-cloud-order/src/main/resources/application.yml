@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-cloud-order
+  port: 8080
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 192.168.132.132:8080
+    nacos:
+      discovery:
+        server-addr: 192.168.132.132:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
